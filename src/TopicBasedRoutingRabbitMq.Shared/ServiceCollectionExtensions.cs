@@ -9,7 +9,7 @@ public static class ServiceCollectionExtensions
     {
         services.RegisterEasyNetQ("host=localhost;port=5672;virtualHost=/;username=guest;password=guest;requestedHeartbeat=25", serviceRegister =>
         {
-            serviceRegister.Register<ISerializer, SystemTextJsonSerializer>();
+            serviceRegister.EnableNewtonsoftJson();
         });
         return services;
     }
