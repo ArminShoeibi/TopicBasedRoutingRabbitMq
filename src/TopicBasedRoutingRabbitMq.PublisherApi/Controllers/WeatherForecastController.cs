@@ -1,6 +1,7 @@
 using System;
 using EasyNetQ;
 using Microsoft.AspNetCore.Mvc;
+using TopicBasedRoutingRabbitMq.Shared;
 
 namespace TopicBasedRoutingRabbitMq.PublisherApi.Controllers;
 [ApiController]
